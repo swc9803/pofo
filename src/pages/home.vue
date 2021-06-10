@@ -1,8 +1,5 @@
 <template>
-  <div class="box">
-    <div class="tape" />
-  </div>
-
+  <div class="sticker" />
 </template>
 
 <script>
@@ -11,19 +8,13 @@ export default {
 }
 </script>
 
-<style>
-  .box {
-    width: 80%;
-    height: 500px;
-    background: rgb(200, 130, 90);
-    border-radius : 2px;
+<style scoped>
+  .sticker {
+    max-width: none;
+    max-height: 99.2%;
+    min-width: 99.2%;
+    min-height: 99.2%;
     position: absolute;
-  }
-  .tape {
-    background: rgb(245, 179, 141);
-    background: linear-gradient( 45deg, rgb(245, 179, 141), rgb(233, 204, 188) );
-    height: 12%;
-    position: relative;
-
+    /* background: linear-gradient( 270deg, rgb(22, 22, 22), rgb(40, 40, 40) ); */
   }
 </style>
