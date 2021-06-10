@@ -24,7 +24,7 @@ export default {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
     position: absolute;
     width: 3525px;
-    height: 198px;
+    height: 220px;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
   }
@@ -56,10 +56,10 @@ export default {
     background :
       linear-gradient(
       0deg,
-      #00495c 50%,
-      #00495c,
-      rgb(255, 255, 255) 65%,
-      rgb(255, 255, 255)
+      #005b72 35%,
+      #005b72,
+      #005b72,
+      #ffffff
     );
     width: 100%;
     height: 100%;
@@ -70,11 +70,45 @@ export default {
   .rod {
     background: rgb(22, 0, 0);
     width: 2px;
-    height: 85%;
+    height: 75%;
     top:0;
     left:50%;
     position: absolute;
+    transform-origin: 50% 0%;
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
   }
+  @keyframes shake{
+  0%{
+  transform: rotate(0deg);
+  }
+  10%{
+  transform: rotate(45deg);
+  }
+  20%{
+  transform: rotate(-45deg);
+  }
+  30%{
+  transform: rotate(30deg);
+  }
+  40%{
+  transform: rotate(-30deg);
+  }
+  50%{
+  transform: rotate(10deg);
+  }
+  60%{
+  transform: rotate(-10deg);
+  }
+  70%{
+  transform: rotate(0deg);
+  }
+  100%{
+  transform: rotate(0deg);
+  }
+    }
   .rope1 {
     background: rgb(22, 0, 0);
     width: 2px;
