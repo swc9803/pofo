@@ -1,6 +1,6 @@
 <template>
   <span class="curl" @mouseover="hover" />
-  <i class="fas fa-power-off power"></i>
+  <!-- <i class="fas fa-power-off power"></i> -->
 </template>
 <script>
 
