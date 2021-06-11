@@ -76,42 +76,20 @@ export default {
     position: absolute;
     transform-origin: 50% 0%;
     animation-name: shake;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-delay: 0.5s;
   }
   @keyframes shake{
-  0%{
-  transform: rotate(0deg);
-  }
-  10%{
-  transform: rotate(45deg);
-  }
-  20%{
-  transform: rotate(-45deg);
-  }
-  30%{
-  transform: rotate(30deg);
-  }
-  40%{
-  transform: rotate(-30deg);
-  }
-  50%{
-  transform: rotate(10deg);
-  }
-  60%{
-  transform: rotate(-10deg);
-  }
-  70%{
-  transform: rotate(0deg);
-  }
-  100%{
-  transform: rotate(0deg);
-  }
+    30%{
+    transform: rotate(-2deg);
     }
+    70%{
+    transform: rotate(2deg);
+    }
+  }
   .rope1 {
     background: rgb(22, 0, 0);
-    width: 2px;
+    width: 5px;
     height: 50%;
     position: absolute;
     transform: rotate(50deg);
