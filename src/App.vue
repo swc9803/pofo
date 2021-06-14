@@ -23,7 +23,7 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  .fade-enter.active, .fade-leave.active {
+  /* .fade-enter.active, .fade-leave.active {
     transition: opacity 0.5s ease-in-out, tranform 0.5s ease;
   }
   .fade-enter.active {
@@ -36,5 +36,5 @@ export default {
   .fade-enter-to, .fade-leave {
     opacity: 1;
     transform: translateX(0px);
-  }
+  } */
 </style>
