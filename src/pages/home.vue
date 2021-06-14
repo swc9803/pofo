@@ -60,6 +60,7 @@ export default {
     top:-15px;
     left:-20px;
     border-radius: 0px 0px 40px 0px;
+    box-shadow: 5px 5px 10px rgb(30, 30, 30);
     background :
       linear-gradient(
       150deg,
