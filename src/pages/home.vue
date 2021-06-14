@@ -55,9 +55,9 @@ export default {
   .curl {
     cursor: -moz-grabbing;
     width:180px;
-    height:100px;
+    height:120px;
     position: absolute;
-    top:0;
+    top:-15px;
     left:-20px;
     border-radius: 0px 0px 40px 0px;
     background :
@@ -71,7 +71,7 @@ export default {
       rgb(61, 45, 45),
       rgb(30, 30, 30),
       rgb(30, 30, 30),
-      rgb(30, 30, 30) 65%,
+      rgb(40, 40, 40) 75%,
       rgb(83, 71, 71)
     );
   transition: all 2s linear;
