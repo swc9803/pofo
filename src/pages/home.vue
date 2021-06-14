@@ -20,6 +20,8 @@ export default {
 
 <style scoped>
   .front {
+    overflow-x: hidden;
+    overflow-y: hidden;
     background :
       linear-gradient(
       150deg,
@@ -33,7 +35,7 @@ export default {
       rgb(30, 30, 30),
       rgb(50, 50, 50),
       rgb(60, 60, 60),
-      rgb(30, 30, 30),
+      rgb(37, 37, 37),
       rgb(70, 59, 59)
     );
     top:0;
@@ -57,6 +59,7 @@ export default {
     position: absolute;
     top:0;
     left:-20px;
+    border-radius: 0px 0px 40px 0px;
     background :
       linear-gradient(
       150deg,
@@ -69,7 +72,7 @@ export default {
       rgb(30, 30, 30),
       rgb(30, 30, 30),
       rgb(30, 30, 30) 65%,
-      rgb(70, 59, 59)
+      rgb(83, 71, 71)
     );
   transition: all 2s linear;
   }
