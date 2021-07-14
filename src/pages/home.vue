@@ -36,7 +36,7 @@ export default {
       })
       setTimeout(function () {
         router.push({
-          name: 'Made'
+          name: 'Test'
         })
       }, 3200)
     }

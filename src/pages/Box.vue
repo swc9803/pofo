@@ -1,41 +1,61 @@
 <template>
-  <div class="box">
-    <div class="tape" />
+  <div class="front">
+    <img src="@/assets/박스.png" class="box" @click="cutting">
+    <img src="@/assets/커터칼.png" class="cut">
+    <img src="@/assets/라인.png" class="line">
   </div>
-  <router-link to="/boxx">Boxx</router-link>
-  <router-view />
 </template>
 
 <script>
-export default {
+import gsap from 'gsap'
 
+export default {
+  setup () {
+    const cutting = () => {
+      document.querySelector('.cut').style.visibility = 'visible'
+      gsap.from('.cut', {
+        duration: 2, x: 550, y: -550
+      })
+      gsap.to('.cut', {
+        duration: 5, x: 2000, delay: 2
+      })
+      gsap.to('.line', {
+        duration: 5, width: 2000, delay: 2
+      })
+    }
+    return {
+      cutting
+    }
+  }
 }
 </script>
 
 <style scoped>
-  .tape {
-    background: linear-gradient( 45deg, rgba(196, 89, 27, 0.685), rgba(201, 106, 51, 0.685) );
-    height: 12%;
-    position: relative;
-  }
-   .box {
-    width: 80%;
-    height: 500px;
-    background: rgb(110, 93, 83);
-    border-radius : 2px;
-  }
-  .view-enter.active, .view-leave.active {
-    transition: opacity 0.5s ease-in-out, tranform 0.5s ease;
-  }
-  .view-enter.active {
-    transition-delay: 0.5s;
-  }
-  .view-enter, .view-leave.to {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  .view-enter-to, .view-leave {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+.front {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cut {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.line {
+  position: absolute;
+  width: 0.1px;
+  height: 100%;
+}
+
 </style>

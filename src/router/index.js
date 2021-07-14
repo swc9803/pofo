@@ -3,6 +3,7 @@ import Home from '@/pages/Home.vue'
 import Test from '@/pages/Test.vue'
 import Made from '@/pages/Made.vue'
 import Box from '@/pages/Box.vue'
+import Day from '@/pages/Day.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/box',
       name: 'Box',
       component: Box
+    },
+    {
+      path: '/day',
+      name: 'Day',
+      component: Day
     }
   ]
 })
