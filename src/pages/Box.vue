@@ -17,10 +17,10 @@ export default {
         duration: 2, x: 550, y: -550
       })
       gsap.to('.cut', {
-        duration: 5, x: 2000, delay: 2
+        duration: 4.57, x: '200%', delay: 2
       })
       gsap.to('.line', {
-        duration: 5, width: 2000, delay: 2
+        duration: 4.5, width: '200%', delay: 2
       })
     }
     return {
