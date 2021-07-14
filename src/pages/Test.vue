@@ -2,9 +2,9 @@
   <div class="sea">
     <div class="wave" />
     <div class="rod">
-
       <div class="rope1" @click="moveToMade"></div>
-      <div class="rope2" />
+      <div>
+      </div>
       <div class="rope3" />
     </div>
   </div>
@@ -61,13 +61,15 @@ export default {
     cursor: pointer;
   }
   .rope2 {
-    background: rgb(22, 0, 0);
-    width: 2px;
     height: 10%;
     top: 65%;
     position: absolute;
-    transform: rotate(100deg);
-    cursor: pointer;
+    /* transform: rotate(100deg); */
+      transition: all 2s linear;
+  }
+  .rope2:hover {
+    width: 250%;
+    height: 250%;
   }
   .rope3 {
     background: rgb(22, 0, 0);

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <transition name="fade">
-      <router-view/>
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -37,4 +39,12 @@ export default {
     opacity: 1;
     transform: translateX(0px);
   } */
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s ease-out;
+  }
 </style>
