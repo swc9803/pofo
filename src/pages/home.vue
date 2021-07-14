@@ -1,5 +1,5 @@
 <template>
-  <div class="back">
+  <div>
     <span class="front">
       <span class="curl" @click="curl"/>
       <i class="fas fa-power-off power" @click="moveToNext"/>
@@ -21,7 +21,10 @@ export default {
         duration: 3, width: '200%', height: '250%'
       })
       gsap.to('.curl', {
-        duration: 0, x: 200, y: 200, width: '200%', height: '250%', delay: 3
+        duration: 0, visibility: 'hidden', delay: 3
+      })
+      gsap.to('.front', {
+        duration: 0, background: '#1e1e1e', delay: 3
       })
       gsap.to('.power', {
         duration: 3, visibility: 'visible', opacity: 1, delay: 3
