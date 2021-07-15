@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home.vue'
-import Test from '@/pages/Test.vue'
+import Sea from '@/pages/Sea.vue'
 import Made from '@/pages/Made.vue'
 import Box from '@/pages/Box.vue'
 import Day from '@/pages/Day.vue'
@@ -14,9 +14,9 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/test',
-      name: 'Test',
-      component: Test
+      path: '/sea',
+      name: 'Sea',
+      component: Sea
     },
     {
       path: '/made',

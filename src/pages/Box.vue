@@ -37,7 +37,7 @@ export default {
       })
       setTimeout(function () {
         router.push({
-          name: 'Test'
+          name: 'Sea'
         })
       }, 6500)
     }
