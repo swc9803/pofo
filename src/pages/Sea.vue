@@ -38,10 +38,11 @@ export default {
   overflow-y: hidden;
   top: 0;
   left: 0;
-}
+  }
 .sea {
   position: absolute;
+  top: 0;
+  left: -1550px;
   height: 100%;
 }
-
 </style>
