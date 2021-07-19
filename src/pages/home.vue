@@ -3,6 +3,7 @@
     <span class="front">
       <span class="curl" @click="curl"/>
       <i class="fas fa-power-off power" @click="moveToNext"/>
+      <Drawline class="line"/>
     </span>
   </div>
 </template>
@@ -10,15 +11,22 @@
 <script>
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import gsap from 'gsap'
+import { gsap, Power0 } from 'gsap'
+import Drawline from '@/components/Drawline'
 
 export default {
+  components: {
+    Drawline
+  },
   setup () {
     const router = useRouter()
 
     const curl = () => {
       gsap.to('.curl', {
         duration: 3, width: '200%', height: '250%'
+      })
+      gsap.to('.curl', {
+        duration: 0, cursor: 'default', delay: 2.2
       })
       gsap.to('.curl', {
         duration: 0, visibility: 'hidden', delay: 3
@@ -34,11 +42,26 @@ export default {
       gsap.to('.power', {
         duration: 3, color: 'rgb(219, 28, 28)'
       })
+      gsap.to('.power', {
+        duration: 1, opacity: 0, delay: 3.5
+      })
+      setTimeout(function () {
+        document.querySelector('.line').style.animationPlayState = 'running'
+      }, 4500)
+      gsap.to('.line', {
+        duration: 0, opacity: 1, delay: 4.4
+      })
+      gsap.to('.line', {
+        duration: 0, animationDuration: 0, delay: 8.5
+      })
+      gsap.to('.line', {
+        duration: 1.5, y: 30, opacity: 0, delay: 9.3, ease: Power0.easeNone
+      })
       setTimeout(function () {
         router.push({
           name: 'Box'
         })
-      }, 3200)
+      }, 10500)
     }
 
     onMounted(() => {
@@ -56,6 +79,23 @@ export default {
 </script>
 
 <style scoped>
+.line {
+  position: absolute;
+  opacity: 0;
+  width: 50%;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw 4s linear alternate both;
+  animation-play-state: paused;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 .front {
   text-align: center;
   overflow-x: hidden;

@@ -4,6 +4,9 @@ import Sea from '@/pages/Sea.vue'
 import Made from '@/pages/Made.vue'
 import Box from '@/pages/Box.vue'
 import Day from '@/pages/Day.vue'
+import AboutMe from '@/pages/AboutMe.vue'
+import History from '@/pages/History.vue'
+import Contact from '@/pages/Contact.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,6 +35,21 @@ const router = createRouter({
       path: '/day',
       name: 'Day',
       component: Day
+    },
+    {
+      path: '/aboutme',
+      name: 'AboutMe',
+      component: AboutMe
+    },
+    {
+      path: '/history',
+      name: 'History',
+      component: History
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })

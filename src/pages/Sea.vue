@@ -22,9 +22,6 @@ export default {
         duration: 30, x: -2000, ease: Power0.easeNone, repeat: -1
       })
     })
-    return {
-
-    }
   }
 }
 </script>
