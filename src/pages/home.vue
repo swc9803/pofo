@@ -3,8 +3,8 @@
     <span class="front">
       <span class="curl" @click="curl"/>
       <i class="fas fa-power-off power" @click="moveToNext"/>
-      <Drawline class="line"/>
     </span>
+    <Drawline class="line"/>
   </div>
 </template>
 
@@ -52,16 +52,16 @@ export default {
         duration: 0, opacity: 1, delay: 4.4
       })
       gsap.to('.line', {
-        duration: 0, animationDuration: 0, delay: 8.5
+        duration: 0, animationDuration: 0, delay: 7
       })
       gsap.to('.line', {
-        duration: 1.5, y: 30, opacity: 0, delay: 9.3, ease: Power0.easeNone
+        duration: 1.5, y: 30, opacity: 0, delay: 7.8, ease: Power0.easeNone
       })
       setTimeout(function () {
         router.push({
           name: 'Box'
         })
-      }, 10500)
+      }, 8850)
     }
 
     onMounted(() => {
@@ -79,23 +79,6 @@ export default {
 </script>
 
 <style scoped>
-.line {
-  position: absolute;
-  opacity: 0;
-  width: 50%;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  animation: draw 4s linear alternate both;
-  animation-play-state: paused;
-}
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 400;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 .front {
   text-align: center;
   overflow-x: hidden;
@@ -123,6 +106,7 @@ export default {
 }
 .power {
   visibility: hidden;
+  z-index: 2;
   opacity: 0;
   text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
   -moz-text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
@@ -156,5 +140,22 @@ export default {
     rgb(40, 40, 40) 75%,
     rgb(83, 71, 71)
   );
+}
+.line {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw 2.5s linear alternate both;
+  animation-play-state: paused;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 </style>
