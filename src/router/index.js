@@ -6,7 +6,8 @@ import Box from '@/pages/Box.vue'
 import Day from '@/pages/Day.vue'
 import AboutMe from '@/pages/AboutMe.vue'
 import History from '@/pages/History.vue'
-import Contact from '@/pages/Contact.vue'
+import Myworks from '@/pages/Myworks.vue'
+import Weather from '@/pages/Weather.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -47,9 +48,14 @@ const router = createRouter({
       component: History
     },
     {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
+      path: '/myworks',
+      name: 'Myworks',
+      component: Myworks
+    },
+    {
+      path: '/weather',
+      name: 'Weather',
+      component: Weather
     }
   ]
 })

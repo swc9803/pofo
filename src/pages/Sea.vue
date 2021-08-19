@@ -35,7 +35,7 @@ export default {
   overflow-y: hidden;
   top: 0;
   left: 0;
-  }
+}
 .sea {
   position: absolute;
   top: 0;

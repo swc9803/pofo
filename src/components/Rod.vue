@@ -140,9 +140,9 @@ export default {
   setup () {
     const router = useRouter()
 
-    const moveToContact = () => {
+    const moveToMyworks = () => {
       router.push({
-        name: 'Contact'
+        name: 'Myworks'
       })
     }
     const moveToHistory = () => {
@@ -200,7 +200,7 @@ export default {
       increright,
       decreleft,
       decreright,
-      moveToContact,
+      moveToMyworks,
       moveToHistory,
       moveToAboutMe
     }
