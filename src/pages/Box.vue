@@ -133,7 +133,6 @@ import gsap from 'gsap'
 export default {
   setup () {
     const router = useRouter()
-
     const cutting = () => {
       document.querySelector('.cut').style.visibility = 'visible'
       gsap.from('.cut', {
