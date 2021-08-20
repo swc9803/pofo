@@ -2,10 +2,10 @@
   <svg class="sea svg" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
     <defs/>
     <g id="seaframe" clip-path="url(#clip0)">
-      <path id="sea" fill="url(#paint0_linear)" d="M-4 325h1928v755H-4V325z"/>
+      <path id="sea" fill="url(#paint0_sea)" d="M-4 325h1928v755H-4V325z"/>
     </g>
     <defs>
-      <linearGradient id="paint0_linear" x1="960" x2="960" y1="325" y2="1080" gradientUnits="userSpaceOnUse">
+      <linearGradient id="paint0_sea" x1="960" x2="960" y1="325" y2="1080" gradientUnits="userSpaceOnUse">
         <stop stop-color="#B0B5EE"/>
         <stop offset=".1" stop-color="#A3AAF1"/>
         <stop offset="1" stop-color="#3C4AD1"/>
@@ -19,7 +19,7 @@
   <svg class="wave1 svg" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
     <defs/>
     <g id="seaframe" clip-path="url(#clip0)">
-      <path id="wave" fill="#B0B5EE" d="M-4 165c99.5 0 107-80 224.2-80 131.3 0 162.4 78.8 257.8 80 99 1.2 134-81.4 245.8-80 111.7 1.4 140.8 78.8 236.2 80 99 1.2 125.5-80 240.8-80 126.2 0 145.8 78.8 241.2 80 99 1.2 122.5-80 270.8-80 128.7 0 111.7 80 211.2 80 99.5 0 0 165 0 165H-4s-99.5-165 0-165z"/>
+      <path id="wave" fill="#B0B5EE" d="M-10.5 165c100.2 0 107.7-80 225.8-80 132.1 0 163.4 78.8 259.5 80 99.7 1.2 134.9-81.4 247.4-80 112.5 1.4 141.7 78.8 237.8 80 99.7 1.2 126.3-80 242.4-80 127 0 146.8 78.8 242.8 80 99.7 1.2 123.3-80 272.6-80 129.6 0 112.5 80 212.7 80 100.2 0 0 165 0 165h-1941s-100.1-165 0-165z"/>
     </g>
     <defs>
       <clipPath id="clip0">
@@ -30,7 +30,7 @@
   <svg class="wave2 svg" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
     <defs/>
     <g id="seaframe" clip-path="url(#clip0)">
-      <path id="wave" fill="#B0B5EE" d="M-4 165c99.5 0 107-80 224.2-80 131.3 0 162.4 78.8 257.8 80 99 1.2 134-81.4 245.8-80 111.7 1.4 140.8 78.8 236.2 80 99 1.2 125.5-80 240.8-80 126.2 0 145.8 78.8 241.2 80 99 1.2 122.5-80 270.8-80 128.7 0 111.7 80 211.2 80 99.5 0 0 165 0 165H-4s-99.5-165 0-165z"/>
+      <path id="wave" fill="#B0B5EE" d="M-10.5 165c100.2 0 107.7-80 225.8-80 132.1 0 163.4 78.8 259.5 80 99.7 1.2 134.9-81.4 247.4-80 112.5 1.4 141.7 78.8 237.8 80 99.7 1.2 126.3-80 242.4-80 127 0 146.8 78.8 242.8 80 99.7 1.2 123.3-80 272.6-80 129.6 0 112.5 80 212.7 80 100.2 0 0 165 0 165h-1941s-100.1-165 0-165z"/>
     </g>
     <defs>
       <clipPath id="clip0">
@@ -41,7 +41,7 @@
   <svg class="wave3 svg" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
     <defs/>
     <g id="seaframe" clip-path="url(#clip0)">
-      <path id="backwave1" fill="#969CE8" d="M-4 186c96.5-2 146.7-136 245.8-134.7 95.4 1.4 140.8 89.7 236.2 91 99 1.4 147-92.3 246-91 95.4 1.4 140.6 89.7 236 91 99 1.4 146.7-92.3 245.8-91 95.4 1.4 140.8 89.7 236.2 91 99 1.4 146.7-92.3 245.8-91C1783.2 52.7 1822 186 1924 186s0 144.1 0 144.1H-4s-96.5-142.1 0-144z"/>
+      <path id="backwave1" fill="#A7ADF9" d="M-4 186c96.5-2 146.7-136 245.8-134.7 95.4 1.4 140.8 89.7 236.2 91 99 1.4 147-92.3 246-91 95.4 1.4 140.6 89.7 236 91 99 1.4 146.7-92.3 245.8-91 95.4 1.4 140.8 89.7 236.2 91 99 1.4 146.7-92.3 245.8-91C1783.2 52.7 1822 186 1924 186s0 144.1 0 144.1H-4s-96.5-142.1 0-144z"/>
     </g>
     <defs>
       <clipPath id="clip0">
@@ -52,7 +52,7 @@
   <svg class="wave4 svg" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
     <defs/>
     <g id="seaframe" clip-path="url(#clip0)">
-      <path id="backwave1" fill="#969CE8" d="M-4 186c96.5-2 146.7-136 245.8-134.7 95.4 1.4 140.8 89.7 236.2 91 99 1.4 147-92.3 246-91 95.4 1.4 140.6 89.7 236 91 99 1.4 146.7-92.3 245.8-91 95.4 1.4 140.8 89.7 236.2 91 99 1.4 146.7-92.3 245.8-91C1783.2 52.7 1822 186 1924 186s0 144.1 0 144.1H-4s-96.5-142.1 0-144z"/>
+      <path id="backwave1" fill="#A7ADF9" d="M-4 186c96.5-2 146.7-136 245.8-134.7 95.4 1.4 140.8 89.7 236.2 91 99 1.4 147-92.3 246-91 95.4 1.4 140.6 89.7 236 91 99 1.4 146.7-92.3 245.8-91 95.4 1.4 140.8 89.7 236.2 91 99 1.4 146.7-92.3 245.8-91C1783.2 52.7 1822 186 1924 186s0 144.1 0 144.1H-4s-96.5-142.1 0-144z"/>
     </g>
     <defs>
       <clipPath id="clip0">

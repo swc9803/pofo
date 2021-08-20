@@ -1,26 +1,18 @@
 <template>
   <div class="front">
+    <Rod class="sea"/>
     <Sea class="sea"/>
-    <!-- <Rod/> -->
   </div>
 </template>
 
 <script>
-import { gsap } from 'gsap'
-import { onMounted } from 'vue'
+import Rod from '@/components/sea/Rod'
 import Sea from '@/components/sea/Sea'
-// import Rod from '@/components/sea/Rod'
 
 export default {
   components: {
+    Rod,
     Sea
-    // Rod
-  },
-  setup () {
-    onMounted(() => {
-      gsap.to('.sea', {
-      })
-    })
   }
 }
 </script>
@@ -32,19 +24,12 @@ html{
   padding: 0;
   height: 100%;
 }
-/* .front {
-  position: absolute;
+.sea {
+  display: block;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  position: fixed;
   top: 0;
   left: 0;
 }
-.sea {
-  position: absolute;
-  top: 0;
-  left: -1550px;
-  height: 100%;
-} */
 </style>

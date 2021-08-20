@@ -5,8 +5,8 @@ import Made from '@/pages/Made.vue'
 import Box from '@/pages/Box.vue'
 import Day from '@/pages/Day.vue'
 import AboutMe from '@/pages/AboutMe.vue'
-import History from '@/pages/History.vue'
 import Myworks from '@/pages/Myworks.vue'
+import Contact from '@/pages/Contact.vue'
 import Weather from '@/pages/Weather.vue'
 
 const router = createRouter({
@@ -43,14 +43,14 @@ const router = createRouter({
       component: AboutMe
     },
     {
-      path: '/history',
-      name: 'History',
-      component: History
-    },
-    {
       path: '/myworks',
       name: 'Myworks',
       component: Myworks
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     },
     {
       path: '/weather',
