@@ -45,6 +45,9 @@ export default {
       gsap.to('.power', {
         duration: 1, opacity: 0, delay: 3.5
       })
+      gsap.to('.power', {
+        display: 'none', delay: 4.5
+      })
       setTimeout(function () {
         document.querySelector('.line').style.animationPlayState = 'running'
       }, 4500)
@@ -59,7 +62,7 @@ export default {
       })
       setTimeout(function () {
         router.push({
-          name: 'Box'
+          name: 'Sea'
         })
       }, 8850)
     }

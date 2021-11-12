@@ -2,7 +2,7 @@
   <Background class="fall" />
   <FallText class="fall" />
   <Reed class="fall" />
-  <Leaf class="fall" />
+  <Leaf/>
 </template>
 
 <script>

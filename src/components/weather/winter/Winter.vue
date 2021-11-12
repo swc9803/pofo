@@ -1,6 +1,6 @@
 <template>
   <WinterText class="winter" />
-  <Snow class="winter" />
+  <Snow/>
   <Snowman class="winter" />
 </template>
 

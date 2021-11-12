@@ -1,5 +1,5 @@
 <template>
-  <svg preserveAspectRatio="none" width="1920" height="1080" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1012 525">
+  <svg class="summer" preserveAspectRatio="none" width="1920" height="1080" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1012 525">
     <g id="Summer" clip-path="url(#clip0)">
       <g id="cloud" fill="#4A4A4A">
         <path id="rcloud1" d="M1012.96 311l-92.66 13.16c-6.45.92-12.8 2.46-18.95 4.61l-75.72 26.49a100 100 0 01-74.4-3.37l-26.68-12.12a100 100 0 00-64.72-6.21l-63.67 15.28a100 100 0 01-55.19-2.45l-5.86-1.97c-42.16-14.18-89.29.82-112.03 39.04-9.3 15.65-16.64 29.68-17.08 35.69-.46 6.3 3.75 22.37 9.25 40.15 12.36 39.9 50.26 65.7 92.03 65.7h505.68V311z"/>
@@ -233,5 +233,13 @@ export default {
 <style scoped>
 #splash1, #splash2, #splash3, #splash4, #splash5 {
   opacity: 0;
+}
+.summer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 </style>

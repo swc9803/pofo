@@ -1,10 +1,10 @@
 <template>
   <div class="scrollElement" />
   <Scroll class="svg" />
-  <Spring class="wSpring" />
-  <Summer class="wSummer" />
-  <Fall class="wFall" />
-  <Winter class="wWinter" />
+  <Spring/>
+  <Summer/>
+  <Fall/>
+  <Winter/>
 </template>
 
 <script>

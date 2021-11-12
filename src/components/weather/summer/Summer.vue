@@ -1,6 +1,6 @@
 <template>
-  <Remain class="summer wSummer" />
-  <Rain class="summer wSummer" />
+  <Remain/>
+  <Rain/>
 </template>
 
 <script>
@@ -41,7 +41,7 @@ export default {
         end: '52% 100%',
         scrub: 0
       })
-      Summeron.from('.wSummer', { display: 'none' })
+      Summeron.from('.summer', { display: 'none' })
 
       const Summeroff = gsap.timeline()
       ScrollTrigger.create({
@@ -51,19 +51,12 @@ export default {
         end: '55% 100%',
         scrub: 0
       })
-      Summeroff.to('.wSummer', { display: 'none' })
+      Summeroff.to('.summer', { display: 'none' })
     })
   }
 }
 </script>
 
 <style scoped>
-.summer {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+
 </style>

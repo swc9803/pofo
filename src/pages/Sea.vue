@@ -1,7 +1,9 @@
 <template>
-  <div class="front">
-    <Rod class="sea"/>
-    <Sea class="sea"/>
+  <div>
+    <div class="front">
+      <Rod class="sea"/>
+      <Sea />
+    </div>
   </div>
 </template>
 

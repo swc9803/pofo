@@ -13,9 +13,8 @@
 
 <script>
 import { onMounted } from 'vue'
-import { gsap, CSSPlugin } from 'gsap'
+import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-CSSPlugin.useSVGTransformAttr = false
 
 export default {
   setup () {
@@ -29,7 +28,6 @@ export default {
         scrub: 2
       })
       Birds.fromTo('#birds', { xPercent: -100 }, { xPercent: 1000, yPercent: -250 })
-        .fromTo('#wing', { xPercent: -100 }, { xPercent: 1000, yPercent: -250 })
     })
   }
 }

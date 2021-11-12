@@ -223,6 +223,7 @@ export default {
         showorange.reverse()
       })
     })
+
     const shakestop = () => { shake.pause() }
     const shakeresume = () => { shake.resume() }
     const moveToAboutme = () => {
@@ -232,7 +233,7 @@ export default {
     }
     const moveToMyworks = () => {
       router.push({
-        name: 'Myworks'
+        name: 'Weather'
       })
     }
     const moveToContact = () => {
