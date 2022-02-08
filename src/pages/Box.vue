@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg class="svg" @click="cutting" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
+    <svg class="svg" ref="box" @click="cutting" preserveAspectRatio="none" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080">
       <defs/>
       <g id="boxframe" clip-path="url(#clip0)">
         <g id="boxbottom">
@@ -130,11 +130,14 @@
 <script>
 import { useRouter } from 'vue-router'
 import gsap from 'gsap'
+import { ref } from '@vue/reactivity'
 
 export default {
   setup () {
     const router = useRouter()
+    const box = ref()
     const cutting = () => {
+      box.value.style.pointerEvents = 'none'
       const BoxMove = gsap.timeline()
       gsap.to('#knifegroup', { opacity: 1 })
       BoxMove.from('#knifegroup', { yPercent: -140, xPercent: 20, ease: 'none', duration: 1.2 })
@@ -155,7 +158,7 @@ export default {
       }, 2)
     }
     return {
-      cutting
+      box, cutting
     }
   }
 }

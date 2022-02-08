@@ -1,6 +1,6 @@
 <template>
-  <div class="box">
-    dd
+  <div>
+    ( 미완성 ) 애니메이션 구상 및 작업 진행 중입니다.
   </div>
 </template>
 
@@ -11,11 +11,5 @@ export default {
 </script>
 
 <style scoped>
-  .box {
-    width: 80%;
-    height: 500px;
-    background: rgb(228, 130, 77);
-    border-radius : 2px;
-    position: absolute;
-  }
+
 </style>
