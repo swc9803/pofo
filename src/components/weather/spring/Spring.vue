@@ -22,19 +22,7 @@ export default {
       ScrollTrigger.create({
         trigger: '.scrollElement',
         start: '2% top',
-        end: '26% 100%',
-        onEnter: () => {
-          const url = '#spring'
-          history.pushState('', '', url)
-        },
-        onEnterBack: () => {
-          const url = '#spring'
-          history.pushState('', '', url)
-        },
-        onLeaveBack: () => {
-          const url = '#spring'
-          history.pushState('', '', url)
-        }
+        end: '26% 100%'
       })
       const Springon = gsap.timeline()
       ScrollTrigger.create({

@@ -1,6 +1,6 @@
 <template>
   <div>
-    ( 미완성 ) 애니메이션 구상 및 작업 진행 중입니다.
+    ( incomplete ) 애니메이션 구상 및 작업 진행 중입니다.
   </div>
 </template>
 

@@ -19,19 +19,7 @@ export default {
       ScrollTrigger.create({
         trigger: '.scrollElement',
         start: '76% top',
-        end: '95% 100%',
-        onEnter: () => {
-          const url = '#winter'
-          history.pushState('', '', url)
-        },
-        onEnterBack: () => {
-          const url = '#winter'
-          history.pushState('', '', url)
-        },
-        onLeaveBack: () => {
-          const url = '#winter'
-          history.pushState('', '', url)
-        }
+        end: '95% 100%'
       })
     })
   }

@@ -8,6 +8,7 @@ import AboutMe from '@/pages/AboutMe.vue'
 import Myworks from '@/pages/Myworks.vue'
 import Contact from '@/pages/Contact.vue'
 import Weather from '@/pages/Weather.vue'
+import Darkmode from '@/pages/Darkmode.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -56,6 +57,11 @@ const router = createRouter({
       path: '/weather',
       name: 'Weather',
       component: Weather
+    },
+    {
+      path: '/darkmode',
+      name: 'Darkmode',
+      component: Darkmode
     }
   ]
 })

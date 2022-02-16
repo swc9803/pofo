@@ -18,19 +18,7 @@ export default {
       ScrollTrigger.create({
         trigger: '.scrollElement',
         start: '27% top',
-        end: '54% 100%',
-        onEnter: () => {
-          const url = '#summer'
-          history.pushState('', '', url)
-        },
-        onEnterBack: () => {
-          const url = '#summer'
-          history.pushState('', '', url)
-        },
-        onLeaveBack: () => {
-          const url = '#summer'
-          history.pushState('', '', url)
-        }
+        end: '54% 100%'
       })
 
       const Summeron = gsap.timeline()
