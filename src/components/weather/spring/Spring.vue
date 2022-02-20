@@ -19,11 +19,6 @@ export default {
   components: { Background, Birds, SpringText, Tree },
   setup () {
     onMounted(() => {
-      ScrollTrigger.create({
-        trigger: '.scrollElement',
-        start: '2% top',
-        end: '26% 100%'
-      })
       const Springon = gsap.timeline()
       ScrollTrigger.create({
         animation: Springon,

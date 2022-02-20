@@ -15,12 +15,6 @@ export default {
   components: { Remain, Rain },
   setup () {
     onMounted(() => {
-      ScrollTrigger.create({
-        trigger: '.scrollElement',
-        start: '27% top',
-        end: '54% 100%'
-      })
-
       const Summeron = gsap.timeline()
       ScrollTrigger.create({
         animation: Summeron,

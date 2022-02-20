@@ -8,21 +8,11 @@
 import WinterText from '@/components/weather/winter/WinterText'
 import Snow from '@/components/weather/winter/Snow'
 import Snowman from '@/components/weather/winter/Snowman'
-import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 export default {
-  components: { WinterText, Snow, Snowman },
-  setup () {
-    onMounted(() => {
-      ScrollTrigger.create({
-        trigger: '.scrollElement',
-        start: '76% top',
-        end: '95% 100%'
-      })
-    })
-  }
+  components: { WinterText, Snow, Snowman }
 }
 </script>
 
